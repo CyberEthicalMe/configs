@@ -1,0 +1,12 @@
+{
+    "window.zoomLevel": 0,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": false,
+    "importSorter.generalConfiguration.sortOnBeforeSave": true,
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": true,
+	"editor.formatOnPaste":true,
+	"editor.formatOnSave":true,
+	"diffEditor.renderSideBySide": true,
+	"files.insertFinalNewLine": true
+}

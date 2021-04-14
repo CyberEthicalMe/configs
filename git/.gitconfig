@@ -1,6 +1,7 @@
 [user]
 	name = AAAABBBB
 	email = XXXXXXXX@users.noreply.github.com
+	signingkey = 34A91BE1A93DDAF6
 [alias]
 	lg = !"git lg1"
 	lg1 = !"git lg1-specific --all"
@@ -40,7 +41,12 @@
 
 # templates
 [commit]
+	gpgsign = true
 	template = ~/.gitcommit
+[gpg]
+	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+[tag]
+	forceSignAnnotated = true
 [credential]
 	preserve = false
 	helper = wincred

@@ -1,0 +1,12 @@
+[user]
+	name = AAAABBBB
+	email = XXXXXXXX@users.noreply.github.com
+
+[merge]
+	ff = no
+	
+#[remote "origin"]
+#	proxy =
+
+#[http]
+#	sslverify = false

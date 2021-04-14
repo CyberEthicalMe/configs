@@ -5,5 +5,5 @@ Various configuration files to keep environments as homogeneous as possible acro
 
 | # | | Details |
 | --- | --- | --- |
-`git` | Git configuration files, autoexpand | [v1.0](git/README.md)
-`vscode` | MS Visual Studio Code settings and keybindings | [v1.0](vscode/README.md)
+`git` | Git configuration files, autoexpand | [v1.0](git/)
+`vscode` | MS Visual Studio Code settings and keybindings | [v1.0](vscode/)

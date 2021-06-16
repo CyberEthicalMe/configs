@@ -7,6 +7,7 @@ Various configuration files to keep environments as homogeneous as possible acro
 | --- | --- | --- |
 `git` | Git configuration files, autoexpand | [v1.1](git/)
 `vscode` | MS Visual Studio Code settings and keybindings | [v1.0](vscode/)
+`kali-rearm` | Kali quick setup | [v1.0](kali-rearm/)
 
 # Public key
 

@@ -5,11 +5,11 @@ alias cd..='cd ..'
 alias ..='cd ..'
 
 function nmap-init {
-	nmap -sV -sC -p- $1 -oN nmap-$1.out
+	nmap -A -sV -p- $1 -oN nmap-$1.out
 }
 
 function nmap-spec {
-	nmap -sV -sC -p $2 $1 -oN nmap-$1-ports.out
+	nmap -A -sV -p $2 $1 -oN nmap-$1-ports.out
 }
 
 function gobuster-http {

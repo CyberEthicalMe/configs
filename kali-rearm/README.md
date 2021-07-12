@@ -8,11 +8,15 @@ Set of aliases and bash functions.
 
 ## tools.list
 
-List of commonly used tools to feet `apt install`.
+List of commonly used tools to feed `apt install`.
 
 ## prompt.fix
 
 Changes default prompt to show timestamp.
+
+## rearm-init.sh
+
+Run this to install all packages and dependencies.
 
 ```
 # Current session

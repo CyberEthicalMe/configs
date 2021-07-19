@@ -5,7 +5,6 @@ nmap
 wireshark
 hashcat
 ffuf
-gobuster
 hydra
 sqlmap
 metasploit-framework
@@ -20,4 +19,5 @@ vim
 terminator
 tree
 code-oss
-docker-io
+docker.io
+man-db

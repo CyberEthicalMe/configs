@@ -3,26 +3,19 @@ alias df='df -h'
 alias cls='clear'
 alias cd..='cd ..'
 alias ..='cd ..'
-
-function nmap-init {
-	nmap -A -sV -p- $1 -oN nmap-$1.out
-}
-
-function nmap-spec {
-	nmap -A -sV -p $2 $1 -oN nmap-$1-ports.out
-}
-
-function gobuster-http {
-	gobuster dir -w /usr/wl/dirbuster-m.txt -x txt,php -u http://$1 -o gbdir-$1-http.out
-}
-
-function gobuster-https {
-	gobuster dir -w /usr/wl/dirbuster-m.txt -x txt,php -u https://$1 -k -o gbdir-$1-https.out
-}
+alias gpg-reset="gpgconf --kill gpg-agent gpg-connect-agent reloadagent /bye"
 
 function apt-updater {
-	sudo apt update &&
-	sudo apt dist-upgrade -y &&
-	sudo apt autoremove -y &&
-	sudo apt autoclean
+        sudo apt update &&
+        sudo apt dist-upgrade -y &&
+        sudo apt autoremove -y &&
+        sudo apt autoclean
+}
+
+function ffile {
+        file $1 | tr "," "\n"
+}
+
+function ping-until {
+        until nc -vzw 2 $1 $2; do sleep 2; done
 }

@@ -1,6 +1,7 @@
 #!/bin/bash
+@echo off
 PREV_PWD=$(pwd)
-WDIR="$HOME/my_data/test"
+WDIR="$HOME/my_data"
 
 cd $WDIR
 
@@ -27,7 +28,7 @@ cd $WDIR
 wget https://raw.githubusercontent.com/KamilPacanek/configs/master/htb-pwnbox/export-mate-terminal.sh
 
 # get some tools
-git clone https://github.com/ffuf/ffuf $WDIR/tools/ffuf ; cd ffuf ; go get ; go build
+git clone https://github.com/ffuf/ffuf $WDIR/tools/ffuf ; cd $WDIR/tools/ffuf ; go get ; go build
 
 # return to previous working directory
 cd $PREV_PWD

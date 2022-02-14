@@ -32,6 +32,7 @@
 [core]
 	editor = code --wait
 	autocrlf = true
+	ignorecase = false
 [rerere]
 	enabled = true
 	

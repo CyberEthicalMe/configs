@@ -15,7 +15,7 @@ wget https://github.com/powerline/fonts/raw/master/Cousine/Cousine%20for%20Power
 # prepare home directory to preload in user_init
 mkdir -p home
 cd home
-wget https://raw.githubusercontent.com/CyberEthicalMe/configs/master/kali-rearm/.bash_aliases
+wget https://raw.githubusercontent.com/CyberEthicalMe/configs/master/bash/.bash_aliases
 wget https://raw.githubusercontent.com/CyberEthicalMe/configs/master/tmux/.tmux.conf
 git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm
 

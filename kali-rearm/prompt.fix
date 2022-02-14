@@ -1,1 +1,0 @@
-export 'PROMPT=%F{%(#.blue.green)}--${debian_chroot:+($debian_chroot)──}$(venv_info)(%B%F{%(#.red.blue)}%n%(#.💀.㉿)%m%b%F{%(#.blue.green)})-[%F{white}%D{%y/%m/%f}-%D{%H:%M:%S}%F{%(#.blue.green)}]-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n--%B%(#.%F{red}#.%F{blue}$)%b%F{reset}'

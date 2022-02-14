@@ -5,7 +5,7 @@ WDIR="$HOME/my_data"
 
 cd $WDIR
 
-# get prefonfigured user_init file
+# get preconfigured user_init file
 wget https://raw.githubusercontent.com/CyberEthicalMe/configs/master/htb-pwnbox/user_init --backups=1
 
 # get Powerline font for tmux theme
@@ -30,5 +30,5 @@ wget https://raw.githubusercontent.com/CyberEthicalMe/configs/master/htb-pwnbox/
 # get some tools
 git clone https://github.com/ffuf/ffuf $WDIR/tools/ffuf ; cd $WDIR/tools/ffuf ; go get ; go build
 
-# return to previous working directory
+# return to the previous working directory
 cd $PREV_PWD

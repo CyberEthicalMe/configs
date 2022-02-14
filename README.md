@@ -8,6 +8,8 @@ Various configuration files to keep environments as homogeneous as possible acro
 `git` | Git configuration files, autoexpand | [v1.1](git/)
 `vscode` | MS Visual Studio Code settings and keybindings | [v1.0](vscode/)
 `bash` | Bash aliases | [v1.1](bash/)
+`tmux` | Tmux config files | [v1.0](tmux/)
+`htb-pwnbox` | HackTheBox Parrot Pwnbox persistence scripts | [v1.0](htb-pwnbox/)
 
 # Public key
 

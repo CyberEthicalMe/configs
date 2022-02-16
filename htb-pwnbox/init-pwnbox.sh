@@ -7,6 +7,7 @@ cd $WDIR
 
 # get preconfigured user_init file
 wget https://raw.githubusercontent.com/CyberEthicalMe/configs/master/htb-pwnbox/user_init --backups=1
+chmod +x user_init
 
 # get Powerline font for tmux theme
 mkdir -p fonts
@@ -26,6 +27,9 @@ ssh-keygen -t rsa -f .ssh/id_rsa
 # get terminal settings export script
 cd $WDIR
 wget https://raw.githubusercontent.com/CyberEthicalMe/configs/master/htb-pwnbox/export-mate-terminal.sh
+wget https://raw.githubusercontent.com/CyberEthicalMe/configs/master/htb-pwnbox/import-mate-terminal.sh
+chmod +x export-mate-terminal.sh
+chmod +x import-mate-terminal.sh
 
 # get some tools
 git clone https://github.com/ffuf/ffuf $WDIR/tools/ffuf ; cd $WDIR/tools/ffuf ; go get ; go build

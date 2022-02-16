@@ -15,5 +15,4 @@ if which fc-cache >/dev/null 2>&1 ; then
 fi
 
 # load mate-terminal profiles
-dconf load /org/mate/terminal/profiles/profile0/ < ~/my_data/mate-terminal/profile0.mtconf
-dconf load /org/mate/terminal/global/ < ~/my_data/mate-terminal/global.mtconf
+source ~/my_data/import-mate-terminal.sh

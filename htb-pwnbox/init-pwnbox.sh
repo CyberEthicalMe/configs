@@ -1,5 +1,4 @@
 #!/bin/bash
-@echo off
 PREV_PWD=$(pwd)
 WDIR="$HOME/my_data"
 

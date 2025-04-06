@@ -1,19 +1,17 @@
-# Tested on PowerShell 7.2.6
-
-function Color-Console {
-    $hosttime = (Get-Date).ToString("yyyy/MM/dd HH:mm:ss")
-    $hostversion="$($Host.Version.Major)`.$($Host.Version.Minor)`.$($Host.Version.Build)"
-    $Host.UI.RawUI.WindowTitle = "PowerShell $hostversion ($hosttime)"
-    Clear-Host
-}
-
-function Prompt
-{
-    $e = [char]0x1b
-    Write-Host "$e[38;2;255;255;0;48;2;0;0;0;1m[$env:COMPUTERNAME] [$(Get-Date)] $e[38;2;255;255;255;1m$(Get-Location)$e[0m"
-}
-
-Color-Console
+# Tested on PowerShell 7.4.7
+# Uses: Starship shell, choco
 
 $VerbosePreference = 'Continue'
 $PSDefaultParameterValues=@{"Help:ShowWindow"=$True}
+
+# Import the Chocolatey Profile that contains the necessary code to enable
+# tab-completions to function for `choco`.
+# Be aware that if you are missing these lines from your profile, tab completion
+# for `choco` will not function.
+# See https://ch0.co/tab-completion for details.
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
+
+Invoke-Expression (&starship init powershell)
